@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./stylesheets/about.scss" />
+    <script type="module" src="./javascripts/main.js"></script>
+    <title>About Me</title>
+  </head>
+  <body>
+    <iframe src="./nav.html" frameborder=""></iframe>
+
+    <div class="container">
+      <div class="image2">
+        <img src="./pictures/newsd.jpg" class="img-fluid" alt="me" />
+      </div>
+      <div class="text">
+        <p class="about">
+          Albert Einstein once said: <b>"Creativity is Intelligence having fun."</b>
+          At Weber State I was introduced to computer science and web development. Since then I changed my degree and
+          learned to love the highs and lows of creation.
+        </p>
+        Skills
+        <ul>
+          <li>CSS</li>
+          <li>HTML</li>
+          <li>React</li>
+          <li>Javascript</li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="photos" id="work">
+      <div class="carousel" data-carousel>
+        <button class="carousel-button prev" data-carousel-button="prev"><i class="bi bi-arrow-left"></i></button>
+        <button class="carousel-button next" data-carousel-button="next"><i class="bi bi-arrow-right"></i></button>
+        <ul data-slides>
+          <li class="slide" data-active>
+            <p>Camping</p>
+            <img src="./pictures/camping.avif" alt="" />
+          </li>
+
+          <li class="slide">
+            <p>Working On Cars</p>
+            <img src="./pictures/block.avif" alt="" />
+          </li>
+          <li class="slide">
+            <p>Gaming</p>
+            <img src="./pictures/gaming.avif" alt="" />
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="card">
+      <div class="card-header"><b>Testimonial</b></div>
+      <div class="card-body">
+        <blockquote class="blockquote mb-0">
+          <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+            <path
+              d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z"
+            />
+          </svg>
+          <p>
+            Kaleb has exceptional communication capabilities, dedication to his work and education, and is an incredibly
+            motivated individual. Throughout the several months of working together, he has demonstrated his technical
+            skills and his ability to quickly learn. Some of the projects we have conducted together include virtual
+            machine learning through various Windows and Linux operating systems, setting up a print server and group
+            policies, along with Microsoft Office, Google, and domain account administration. During our slow periods,
+            he continues to stay busy by engaging in his coding projects or asking further in-depth questions regarding
+            our profession. Kaleb’s motivation, dedication, and his growing experience would make him a huge asset to
+            any employer lucky enough to get him.
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+              <path
+                d="M448 296c0 66.3-53.7 120-120 120h-8c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H320c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72zm-256 0c0 66.3-53.7 120-120 120H64c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H64c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72z"
+              />
+            </svg>
+          </p>
+
+          <footer class="blockquote-footer">Mikell Tippets <cite>Threat Analyst</cite></footer>
+        </blockquote>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,177 @@
+@import "bootstrap/scss/bootstrap.scss";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+body {
+  margin: 0;
+}
+.image2 {
+  display: block;
+  height: 100%;
+}
+
+.navbar {
+  padding: 20px;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  li {
+    list-style: none;
+    display: inline;
+    margin-right: 50px;
+
+    color: white;
+  }
+  background-color: black;
+  width: 100%;
+  a {
+    text-decoration: none;
+  }
+}
+
+img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  height: 95%;
+  width: 100%;
+  float: inline-end;
+  margin-bottom: 0.5rem;
+}
+
+.container {
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 15px;
+}
+
+.card {
+  margin-top: 5rem;
+  margin-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background-color: rgb(55, 42, 42);
+  color: white;
+  p {
+    line-height: 3rem;
+  }
+}
+
+iframe {
+  height: 100%;
+  width: 100%;
+}
+
+.text {
+  font-size: 20px;
+}
+
+.card-header {
+  text-align: center;
+  font-size: 30px;
+}
+
+.blockquote-footer {
+  color: white;
+}
+
+.photos {
+  background-color: rgb(46, 41, 41);
+  margin-top: 300px;
+  margin-bottom: 200px;
+  .slide {
+    p {
+      font-family: sans-serif;
+      font-size: 60px;
+    }
+    img {
+      margin-top: 50px;
+      height: 40rem;
+      width: 70%;
+    }
+  }
+}
+
+//carousel
+
+.carousel > ul {
+  margin: 1;
+  list-style: none;
+  padding: 0;
+}
+
+.carousel {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 200ms opacity ease-in-out;
+  transition-delay: 200ms;
+  p {
+    color: white;
+  }
+}
+
+.slide > img {
+  width: 50rem;
+  height: 40rem;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+.slide {
+  p {
+    text-align: center;
+    margin-left: 50px;
+    font-size: 50px;
+    height: 5%;
+  }
+}
+
+.slide[data-active] {
+  opacity: 1;
+  transition-delay: 0;
+  z-index: 1;
+}
+
+.carousel-button {
+  position: absolute;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  z-index: 2;
+  transform: translate(-50%);
+  color: black;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  background-color: white;
+  margin-top: 15%;
+  margin-left: 50px;
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+  color: white;
+  background-color: black;
+}
+
+.carousel-button:focus {
+  outline: 1px solid black;
+}
+
+.carousel-button.prev {
+  left: 1rem;
+}
+.carousel-button.next {
+  right: 1rem;
+}
