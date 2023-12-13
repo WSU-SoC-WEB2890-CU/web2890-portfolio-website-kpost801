@@ -182,7 +182,7 @@ iframe {
   right: 1rem;
 }
 
-@media screen and (min-width: 500px) {
+@media (max-width: 900px) {
   .photos {
     background-color: rgb(46, 41, 41);
     margin-top: 100px;
