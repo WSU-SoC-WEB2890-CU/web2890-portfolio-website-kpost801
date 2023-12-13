@@ -60,4 +60,23 @@ a {
     height: 33rem;
     background-color: rgb(195, 188, 188);
   }
+  .navbar {
+    padding: 1px;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    li {
+      list-style: none;
+      display: inline;
+      margin-right: 10px;
+
+      color: white;
+    }
+    background-color: black;
+    width: 100%;
+    a {
+      text-decoration: none;
+    }
+  }
 }
