@@ -4,6 +4,11 @@
 h1 {
   text-align: center;
   padding-top: 25px;
+  font-size: 8rem;
+}
+
+body {
+  background-color: rgb(187, 181, 181);
 }
 
 .navbar {
@@ -26,32 +31,57 @@ h1 {
   }
 }
 
-.container {
-  p {
-    margin-left: 100px;
-    padding-right: 300px;
-    font-family: sans-serif;
-    padding-top: 25px;
-    font-size: 25px;
-  }
+.row {
+  display: flex;
+  flex-wrap: wrap;
   img {
-    padding-top: 50px;
-    margin-left: 250px;
-    width: 50rem;
+    padding-top: 40px;
+    margin-left: 10rem;
+    width: 25rem;
   }
 }
 
-.text {
-  h2 {
-    padding-top: 50px;
-  }
-  margin-bottom: 50px;
+.col {
+  flex: 50%;
 }
 
-button {
-  margin-left: 700px;
-  margin-bottom: 100px;
-  a {
-    text-decoration: none;
+@media (max-width: 900px) {
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    img {
+      width: 1rem;
+      margin-left: 3rem;
+    }
+  }
+  .navbar {
+    padding: 1px;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    li {
+      list-style: none;
+      display: inline;
+      margin-right: 1px;
+
+      color: white;
+    }
+    background-color: black;
+    width: 100%;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+@media screen and (max-width: 1120px) {
+  .row {
+    img {
+      width: 20rem;
+    }
   }
 }

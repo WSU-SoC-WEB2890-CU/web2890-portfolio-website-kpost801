@@ -49,9 +49,9 @@ img {
 }
 
 .card {
-  margin-top: 5rem;
+  margin: 50px;
+  margin-top: 1rem;
   margin-bottom: 1.5rem;
-  padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   background-color: rgb(55, 42, 42);
   color: white;
@@ -80,8 +80,9 @@ iframe {
 
 .photos {
   background-color: rgb(46, 41, 41);
-  margin-top: 300px;
-  margin-bottom: 200px;
+  margin-top: 200px;
+  margin-bottom: 80px;
+  margin: 100px;
   .slide {
     p {
       font-family: sans-serif;
@@ -89,14 +90,15 @@ iframe {
     }
     img {
       margin-top: 50px;
-      height: 40rem;
-      width: 70%;
+      height: 30rem;
+      width: 60%;
+      margin-left: 25rem;
     }
   }
   h1 {
     text-align: center;
     color: white;
-    font-size: 80px;
+    font-size: 70px;
   }
 }
 
@@ -109,25 +111,22 @@ iframe {
 }
 
 .carousel {
-  width: 100vw;
-  height: 100vh;
+  width: 90vw;
+  height: 90vh;
   position: relative;
 }
 
 .slide {
   position: absolute;
-  inset: 0;
+  inset: 2;
   opacity: 0;
   transition: 200ms opacity ease-in-out;
   transition-delay: 200ms;
-  p {
-    color: white;
-  }
 }
 
 .slide > img {
-  width: 50rem;
-  height: 40rem;
+  width: 70rem;
+  height: 2rem;
   display: block;
   object-fit: cover;
   object-position: center;
@@ -136,9 +135,10 @@ iframe {
 .slide {
   p {
     text-align: center;
-    margin-left: 50px;
+    margin-left: 25rem;
     font-size: 50px;
     height: 5%;
+    color: white;
   }
 }
 
@@ -152,16 +152,17 @@ iframe {
   position: absolute;
   background: none;
   border: none;
-  font-size: 4rem;
+  font-size: 2rem;
   z-index: 2;
-  transform: translate(-50%);
+  transform: translate(-10%);
   color: black;
   cursor: pointer;
   border-radius: 0.25rem;
   padding: 1rem;
   background-color: white;
-  margin-top: 15%;
-  margin-left: 50px;
+  margin-top: 23%;
+  margin-left: 15rem;
+  margin-right: 15rem;
 }
 
 .carousel-button:hover,
@@ -179,4 +180,110 @@ iframe {
 }
 .carousel-button.next {
   right: 1rem;
+}
+
+@media screen and (min-width: 500px) {
+  .photos {
+    background-color: rgb(46, 41, 41);
+    margin-top: 100px;
+    margin-bottom: 5px;
+    margin: 50px;
+    .slide {
+      p {
+        font-family: sans-serif;
+        font-size: 30px;
+      }
+      img {
+        margin-top: 50px;
+        height: 30rem;
+        width: 50%;
+        margin-left: 10rem;
+      }
+    }
+    h1 {
+      text-align: center;
+      color: white;
+      font-size: 70px;
+    }
+  }
+
+  //carousel
+
+  .carousel > ul {
+    margin: 1;
+    list-style: none;
+    padding: 0;
+  }
+
+  .carousel {
+    width: 90vw;
+    height: 90vh;
+    position: relative;
+  }
+
+  .slide {
+    position: absolute;
+    inset: 2;
+    opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
+  }
+
+  .slide > img {
+    width: 70rem;
+    height: 2rem;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .slide {
+    p {
+      text-align: center;
+      margin-left: 1rem;
+      font-size: 50px;
+      height: 5%;
+      color: white;
+    }
+  }
+
+  .slide[data-active] {
+    opacity: 1;
+    transition-delay: 0;
+    z-index: 1;
+  }
+
+  .carousel-button {
+    position: absolute;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    z-index: 2;
+    transform: translate(-10%);
+    color: black;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    background-color: white;
+    margin-top: 40%;
+    margin-left: 1rem;
+    margin-right: 3rem;
+  }
+
+  .carousel-button:hover,
+  .carousel-button:focus {
+    color: white;
+    background-color: black;
+  }
+
+  .carousel-button:focus {
+    outline: 1px solid black;
+  }
+
+  .carousel-button.prev {
+    left: 1rem;
+  }
+  .carousel-button.next {
+    right: 1rem;
+  }
 }
